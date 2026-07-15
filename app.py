@@ -4,9 +4,10 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return jsonify({
-        "message": "Hello from WashU Cloud Computing Week 4!",
-        "platform": "ECS Fargate",
-        "course": "Containers and Serverless"
+        "message": "Hello from WashU Week 5 - CI/CD Pipeline!",
+        "platform": "ECS Fargate via GitHub Actions",
+        "course": "Containers and Serverless",
+        "version": "2.0"
     })
 
 @app.route('/health')
